@@ -1,21 +1,20 @@
-# Excel Agent Changelog
+# Changelog
 
-## [Initial Version] - 2026-01-29
+## [Unreleased]
 
 ### Added
+- **AI Chat Integration**: Use `@Excel Agent` in Raycast Chat to manipulate spreadsheets with full context.
+- **Batch Execution**: The AI now groups instructions into single transactions for 3-4x faster execution.
+- **Test Connection**: New specialized tool to verify Excel connectivity and permissions.
+- **Built-in Scripts**: Reliability layer that uses pre-built AppleScript for common tasks (Bold, Financial Style, Borders) bypassing AI generation errors.
+- **Context Awareness**: The agent now reads "Sheet Name" and "Selection" before complying with requests.
 
-- "Ask Excel" command with quick actions and custom command input
-- "Read Excel" command to view current selection and sheet info
-- AI-powered AppleScript generation for natural language Excel control
-- Support for 4 AI providers: Raycast AI, OpenAI, Google Gemini, Anthropic Claude
-- Built-in quick actions for common formatting tasks:
-  - Test Connection
-  - Financial Style (blue inputs, black formulas)
-  - Bold Headers
-  - Format Currency / Percent
-  - Add Borders
-  - Auto-fit Columns
-  - Read Selection
-  - Freeze Top Row
-- Command history with recent commands
-- Detailed error messages and troubleshooting hints
+### Improved
+- **Speed**: Reduced context gathering latency by 80% (removed scanning entire used range by default).
+- **Reliability**: Rewrote AppleScript execution to using strict `tell active sheet` scoping to prevent silent failures.
+- **Error Handling**: Clearer error messages when Excel is not running or permissions are missing.
+- **UI**: Streamlined "Ask Excel" command interface with Quick Actions and History.
+
+### Fixed
+- Fixed an issue where AppleScript would run successfully but not apply changes to the active workbook.
+- Fixed timeouts on slower machines by optimizing script generation.

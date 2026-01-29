@@ -4,6 +4,7 @@
   "description": "Control Microsoft Excel with natural language. Ask questions, format cells, create tables, and more.",
   "icon": "command-icon.png",
   "author": "julien-archambault",
+  "version": "1.0.0",
   "categories": [
     "Productivity",
     "Finance"

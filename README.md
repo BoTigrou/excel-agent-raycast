@@ -7,10 +7,10 @@ Control Microsoft Excel with natural language. Ask questions, format cells, crea
 ## Features
 
 - **Natural Language Control** — Just type what you want to do in Excel
-- **Quick Actions** — One-click formatting for common tasks
-- **AI-Powered** — Uses AI to generate AppleScript for complex operations
+- **AI Chat Integration** — Use `@Excel Agent` in Raycast Chat to build complex models
+- **Quick Actions** — One-click formatting for common tasks (Financial Style, Borders, etc.)
+- **Robust & Fast** — Optimized specifically for speed and reliability on Mac
 - **Multiple AI Providers** — Works with Raycast AI, OpenAI, Google Gemini, or Anthropic Claude
-- **Smart Caching** — Built-in scripts for instant common operations
 
 ## Requirements
 
@@ -44,25 +44,25 @@ Open the extension preferences and choose your AI provider:
 
 ## Usage
 
-### "Ask Excel" Command
+### 1. AI Chat (@Excel Agent)
 
-Open Raycast and type **"Ask Excel"** to see:
+The most powerful way to use this extension. In Raycast AI Chat, type **@Excel Agent** followed by your request:
 
-- **Quick Actions** — Instant formatting (Bold Headers, Currency, Borders, etc.)
+- *"Create a DCF model template with assumptions for revenue growth and WACC"*
+- *"Analyze this data and format the outliers in red"*
+- *"Build a sales table for Q1-Q4 and add a Total column"*
+
+The agent will intelligently break down tasks, write data, format cells, and confirm actions.
+
+### 2. "Ask Excel" Command
+
+Quickly execute single commands or apply presets:
+
+- **Quick Actions** — Instant formatting (Financial Style, Bold Headers, Currency, etc.)
 - **Recent Commands** — Your history of custom commands
-- **Custom Command** — Type anything you want Excel to do
+- **Custom Command** — Type one-off instructions like *"Make A1:E1 bold"*
 
-#### Example Commands
-
-- *"Create a table with headers: Date, Product, Revenue"*
-- *"Make row 1 bold with blue background"*
-- *"Format column B as currency"*
-- *"Add sum formula in C10"*
-- *"Apply financial style (blue inputs, black formulas)"*
-- *"Auto-fit all columns"*
-- *"Freeze the top row"*
-
-### "Read Excel" Command
+### 3. "Read Excel" Command
 
 Quickly view the current selection and sheet information without leaving Raycast.
 
