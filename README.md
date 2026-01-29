@@ -2,7 +2,8 @@
 
 Control Microsoft Excel with natural language. Ask questions, format cells, create tables, and more — all from Raycast.
 
-![Excel Agent Demo](https://raw.githubusercontent.com/julien-archambault/excel-agent-raycast/main/assets/demo.png)
+![Quick Actions](assets/demo-1.png)
+![AI Chat Integration](assets/demo-2.png)
 
 ## Features
 

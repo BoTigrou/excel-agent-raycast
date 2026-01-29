@@ -1,11 +1,11 @@
 # Changelog
 
-## [Unreleased]
+## [1.0.0] - 2026-01-29
 
 ### Added
 - **AI Chat Integration**: Use `@Excel Agent` in Raycast Chat to manipulate spreadsheets with full context.
 - **Batch Execution**: The AI now groups instructions into single transactions for 3-4x faster execution.
-- **Test Connection**: New specialized tool to verify Excel connectivity and permissions.
+- **Test Connection**: Dedicated feature to verify Excel connectivity and Accessibility permissions.
 - **Built-in Scripts**: Reliability layer that uses pre-built AppleScript for common tasks (Bold, Financial Style, Borders) bypassing AI generation errors.
 - **Context Awareness**: The agent now reads "Sheet Name" and "Selection" before complying with requests.
 
