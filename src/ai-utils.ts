@@ -41,7 +41,7 @@ end tell`;
     // Set a short timeout since we want this to be fast
     const result = await runAppleScript(script, { timeout: 2000 });
     return result || "Sheet: Unknown";
-  } catch (e) {
+  } catch {
     return "Context unavailable (Excel busy)";
   }
 }
@@ -284,8 +284,8 @@ export async function executeScript(script: string): Promise<string> {
       end tell
     `);
     await new Promise((r) => setTimeout(r, 100));
-  } catch (e) {
-    console.log("Activation error:", e);
+  } catch {
+    // Activation error can sometimes be ignored
   }
 
   // Step 2: Execute the actual script
@@ -338,7 +338,7 @@ export async function testExcelConnection(): Promise<string> {
       end tell
     `);
     return result;
-  } catch (e) {
-    return "Error: " + (e instanceof Error ? e.message : String(e));
+  } catch {
+    return "Error: Connection failed";
   }
 }

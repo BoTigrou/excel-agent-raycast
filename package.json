@@ -3,7 +3,7 @@
   "title": "Excel Agent",
   "description": "Control Microsoft Excel with natural language. Ask questions, format cells, create tables, and more.",
   "icon": "command-icon.png",
-  "author": "julien-archambault",
+  "author": "julien1_ja",
   "version": "1.0.0",
   "categories": [
     "Productivity",
@@ -55,8 +55,10 @@
     "@raycast/eslint-config": "^2.1.1",
     "@types/node": "^20.12.7",
     "@types/react": "^19.0.0",
-    "eslint": "^8.57.0",
-    "prettier": "^3.2.5",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "eslint-plugin-react": "^7.37.5",
+    "prettier": "^3.3.3",
     "raycast": "^1.0.8",
     "typescript": "^5.4.5"
   },
@@ -64,7 +66,8 @@
     "build": "ray build",
     "dev": "ray develop",
     "fix-lint": "ray lint --fix",
-    "lint": "ray lint"
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
   },
   "preferences": [
     {
